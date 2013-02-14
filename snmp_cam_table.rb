@@ -2,8 +2,9 @@
 
 # jstout 02/14/2013
 # pull cam table (reverse mac address to switch ports) from a target switch
-#   I should probably make the cam_table a Class
-# 
+#   
+#   *** this is just a silly wrapper for snmpwalk and arp, cause I am lazy.  Also the mibs 
+#   might be only useable on my switch ***
 
 DEBUG = false
 switches = ARGV[0]

@@ -1,0 +1,4 @@
+Bash:
+
+# histogram after a uniq -c | sort -n
+awk '{printf("\n%s ",$0) ; for (i = 0; i<$1 ; i++) {printf("*")};}'

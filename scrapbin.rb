@@ -67,7 +67,7 @@ ranPBrange.shuffle.each { |i|
       if dork.body =~ /[Pp]assword|[Pp]wd|[Pp]asswd|[Pp]ass|PASSWORD|PASSWD|PASS|PWD/
         puts "Found a possible password: http://www.pastebin.ca/raw/#{i}"
         $targets |= ["#{i}"]
-        dork.body.grep( /[Pp]assword|[Pp]wd|[Pp]asswd|[Pp]ass|PASSWORD|PASSWD|PASS|PWD/ ) do |line|
+        dork.body.match( /[Pp]assword|[Pp]wd|[Pp]asswd|[Pp]ass|PASSWORD|PASSWD|PASS|PWD/ ) do |line|
           puts line
         end
         printf("\n\n")
